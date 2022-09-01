@@ -1,7 +1,11 @@
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello From React</h1>
+      <Header />
+      <Hero />
     </div>
   );
 }
