@@ -37,21 +37,3 @@ export const items = [
     desc: "Get seamless cross-platform compatibility via a 3.5 mm audio jack in wired mode. Enjoy high quality stereo sound whether you’re playing on PC, consoles or mobile.",
   },
 ];
-
-export const items2 = [
-  {
-    src: svg4,
-    title: "GAME/CHAT BALANCE",
-    desc: "Fine-tune between game and chat volume for the perfect mix that lets you enjoy immersive sound without interrupting team communication.",
-  },
-  {
-    src: svg5,
-    title: "2.4GHZ WIRELESS AUDIO",
-    desc: "Get lag-free, high-fidelity gaming audio with a wireless range of up to 12 meters smoothly without disconnection.",
-  },
-  {
-    src: svg6,
-    title: "WIRED MODE",
-    desc: "Get seamless cross-platform compatibility via a 3.5 mm audio jack in wired mode. Enjoy high quality stereo sound whether you’re playing on PC, consoles or mobile.",
-  },
-];
