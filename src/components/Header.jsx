@@ -7,7 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import logo from "../assets/logo.png";
 
-function OffcanvasExample() {
+function Header() {
   return (
     <>
       {["xxl"].map((expand) => (
@@ -92,4 +92,4 @@ function OffcanvasExample() {
   );
 }
 
-export default OffcanvasExample;
+export default Header;

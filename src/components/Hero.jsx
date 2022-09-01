@@ -26,7 +26,7 @@ const Hero = () => {
             <img src={thx} alt="thx" />
             <img src={chroma} alt="thx" />
           </Col>
-          <Col className="svg">
+          <Col>
             <img className="razer-svg" src={razer} alt="" />
           </Col>
         </Row>
