@@ -23,8 +23,8 @@ const Hero = () => {
               drivers for gaming. This is the Razer Nari.
             </p>
 
-            <img src={thx} alt="thx" />
-            <img src={chroma} alt="thx" />
+            <img className="logo" src={thx} alt="thx" />
+            <img className="logo" src={chroma} alt="thx" />
           </Col>
           <Col>
             <img className="razer-svg" src={razer} alt="" />
