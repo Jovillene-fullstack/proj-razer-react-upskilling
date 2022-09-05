@@ -5,6 +5,7 @@ import Products from "./components/Products";
 import FadeThx from "./components/thx";
 import Others from "./components/Other";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <FadeThx />
       <Others />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -14,7 +14,7 @@ function others() {
           return (
             <Col className="other-cards" xs={12} md={6} lg={3}>
               <div className="gadgets">
-                <img src={prod.img} alt="" />
+                <img className="g-items" src={prod.img} alt="" />
                 <img className="logo" src={prod.icon} alt="" />
               </div>
               <div className="desc">

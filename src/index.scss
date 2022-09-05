@@ -4,6 +4,7 @@ body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
   background-color: #0f0f0f;
+  overflow-x: hidden;
 }
 
 a {
@@ -65,83 +66,28 @@ a {
   background-color: #000;
 }
 
-.sub2 {
-  position: absolute;
-  left: 234px;
-  top: 10px;
+#navi-bar {
+  .col:nth-child(2) {
+    justify-content: space-between;
+    display: flex;
+
+    .sub-menu2 {
+      position: absolute;
+      inset: 0px auto auto 0px;
+      transform: translate3d(207px, -7px, 0px);
+    }
+
+    .dropdown-item {
+      &:hover {
+        background-color: #000;
+      }
+    }
+  }
+
+  .sub-navi {
+    display: none;
+  }
 }
-
-// .overlay {
-//   height: 100%;
-//   width: 0;
-//   position: fixed;
-//   z-index: 1;
-//   top: 0;
-//   left: 3px;
-//   background-color: rgb(0, 0, 0);
-//   overflow-x: hidden;
-//   transition: 0.5s;
-
-//   .nav-label {
-//     h2 {
-//       text-transform: uppercase;
-//       font-size: 20px;
-//       font-weight: 700;
-//       color: #818181;
-//       margin: 30px 0px 0px 20px;
-//     }
-//   }
-
-//   .dropdown-toggle::after {
-//     border: none !important;
-//     font: normal normal normal 20px/1 FontAwesome;
-//     content: "\f105" !important; /* the desired FontAwesome icon */
-//     vertical-align: 0; /* to center vertically */
-//   }
-
-//   .overlay-content {
-//     position: relative;
-//     top: 5%;
-//     width: 100%;
-//     text-align: left;
-//     margin-top: 30px;
-
-//     a {
-//       margin-left: 20px;
-//       padding: 8px;
-//       text-decoration: none;
-//       font-size: 20px;
-//       color: #818181;
-//       display: block;
-//       transition: 0.3s;
-//       text-transform: uppercase;
-//       font-weight: 700;
-
-//       &:focus {
-//         color: #00ff01;
-//       }
-//     }
-
-//     a:hover,
-//     a:focus {
-//       color: #00ff01;
-//     }
-//   }
-
-//   .closebtn {
-//     position: absolute;
-//     color: #818181;
-//     top: 3px;
-//     right: 45px;
-//     font-size: 60px;
-//   }
-
-//   .btn {
-//     margin: 10% 5%;
-//     width: 90%;
-//     height: 50px;
-//   }
-// }
 
 #hero {
   background-image: url(../src/assets/hero.jpg);
@@ -194,7 +140,7 @@ a {
       }
       img {
         margin: 3% 0;
-        width: 10%;
+        width: 17%;
       }
     }
   }
@@ -308,6 +254,7 @@ a {
 }
 
 #contact {
+  background-color: #000;
   padding: 3rem;
 
   .con-header {
@@ -367,6 +314,277 @@ a {
 
       p {
         color: #818181;
+      }
+    }
+  }
+}
+
+#footer {
+  align-items: center;
+  justify-content: center;
+
+  .row:nth-child(1) {
+    border-bottom: 2px solid #818181;
+    padding: 50px;
+
+    .col-lg-6 {
+      text-align: center;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+          color: #00ff01;
+        }
+      }
+    }
+
+    .logos {
+      text-align: right;
+
+      img {
+        width: 20px;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .row:nth-child(2) {
+    text-align: center;
+    font-weight: 700;
+    color: #818181;
+    padding: 10px;
+  }
+}
+
+// MOBILE NAVBAR OVERLAY
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
+  a {
+    padding: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+
+    &:hover,
+    &:focus {
+      color: #00ff01;
+    }
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+}
+
+// RESPONSIVENESS
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    h4 {
+      padding: 0 10%;
+      font-size: clamp(1.625rem, 1.4464rem + 0.8929vw, 1.875rem);
+    }
+    P {
+      font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1rem);
+      width: 90%;
+    }
+  }
+
+  .nvbr {
+    background-color: #000;
+    .no-show {
+      display: none;
+    }
+  }
+
+  #hero {
+    background: url(./assets/razer-nari-hero-desktop-wireless-gaming-headset.jpg),
+      linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: 35% 70%;
+    padding: 5%;
+
+    .info {
+      h1 {
+        font-size: clamp(2.25rem, 2.0714rem + 0.8929vw, 2.5rem);
+      }
+
+      p {
+        color: #fff;
+        font-size: clamp(0.75rem, 0.6607rem + 0.4464vw, 0.875rem);
+      }
+
+      .logo {
+        width: 28%;
+      }
+    }
+
+    .col:nth-child(2) {
+      display: none;
+    }
+  }
+
+  #thx {
+    background-position: 40% 50%;
+    padding: 0 5%;
+
+    .info {
+      margin: 10% 0;
+      p {
+        font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1rem);
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  #others {
+    .other-cards {
+      padding: 10%;
+      margin: 0;
+
+      .gadgets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+
+        .logo {
+          right: 10px;
+        }
+      }
+    }
+  }
+
+  #contact {
+    padding: 0;
+
+    .con-header {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    form {
+      #name,
+      #phone {
+        width: calc(100% - 10px);
+      }
+    }
+
+    .con-info {
+      padding: 0 3rem;
+    }
+  }
+
+  #footer {
+    .row:nth-child(1) {
+      padding-bottom: 0;
+
+      .col,
+      .col-lg-6 {
+        margin-bottom: 1.5rem;
+      }
+
+      .col-lg-6 {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+      }
+
+      .logos {
+        text-align: start;
+      }
+    }
+
+    .row:nth-child(2) {
+      text-align: start;
+      h6 {
+        font-size: clamp(0.8125rem, 0.7679rem + 0.2232vw, 0.875rem);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #navi-bar {
+    .col:nth-child(2) {
+      display: none;
+    }
+
+    .sub-navi {
+      display: block;
+      text-align: right;
+
+      i {
+        width: 30px;
+        color: #818181;
+      }
+
+      .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          font-weight: 700;
+          padding: 8px;
+          text-decoration: none;
+
+          color: #818181;
+          display: block; /* Display block instead of inline */
+          transition: 0.3s; /* Transition effects on hover (color) */
+        }
       }
     }
   }
