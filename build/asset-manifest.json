@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ab03bd70.css",
+    "main.js": "/static/js/main.3993bb63.js",
+    "static/media/razer-nari-gallery-05-wireless-gaming-headset.jpg": "/static/media/razer-nari-gallery-05-wireless-gaming-headset.2378ba140b5de3778816.jpg",
+    "static/media/razer-nari-gallery-08-wireless-gaming-headset.jpg": "/static/media/razer-nari-gallery-08-wireless-gaming-headset.e08335c98b5420b34fe0.jpg",
+    "static/media/razer-nari-gallery-06-wireless-gaming-headset.jpg": "/static/media/razer-nari-gallery-06-wireless-gaming-headset.50335b69ffd4bb03a654.jpg",
+    "static/media/razer-nari-gallery-07-wireless-gaming-headset.jpg": "/static/media/razer-nari-gallery-07-wireless-gaming-headset.ae8d004b9bd9962c8ecf.jpg",
+    "static/media/razer-nari-usp02-desktop-wireless-gaming-headset.jpg": "/static/media/razer-nari-usp02-desktop-wireless-gaming-headset.d7e3d079ba7200346f90.jpg",
+    "static/media/razer-nari-hero-desktop-wireless-gaming-headset.jpg": "/static/media/razer-nari-hero-desktop-wireless-gaming-headset.6637334aefd1dfcc23c7.jpg",
+    "static/media/razer-nari-gallery-01-wireless-gaming-headset.jpg": "/static/media/razer-nari-gallery-01-wireless-gaming-headset.fb68886ae1a0d706a46c.jpg",
+    "static/media/hero.jpg": "/static/media/hero.c032f848e11a22860b53.jpg",
+    "static/media/razer-nari-gallery-02-wireless-gaming-headset.jpg": "/static/media/razer-nari-gallery-02-wireless-gaming-headset.9345b340573a8afcd222.jpg",
+    "static/media/BlackWidow-Elite-Base.png": "/static/media/BlackWidow-Elite-Base.2f65b6dcdcb4f20f8d8b.png",
+    "static/media/Mamba-Wireless-Base.png": "/static/media/Mamba-Wireless-Base.76214f795f49de46cd9b.png",
+    "static/media/Nari-Ultimate-Base.png": "/static/media/Nari-Ultimate-Base.dc72c84b5094efbf2b7d.png",
+    "static/media/razer-nari-logo.svg": "/static/media/razer-nari-logo.ef04bea1c130c6027e3d7dd96f58c633.svg",
+    "static/media/razer-nari-Wireless-Audio-icon.svg": "/static/media/razer-nari-Wireless-Audio-icon.688ae1e7477d8c6314112e5f4564503b.svg",
+    "static/media/razer-nari-Auto-Adjusting-Headband-icon.svg": "/static/media/razer-nari-Auto-Adjusting-Headband-icon.6eb94a0ccdc520a244debbb5067b4c67.svg",
+    "static/media/google-plus.svg": "/static/media/google-plus.0c6ff6a9101b9053e9ca7ecf8a664d5a.svg",
+    "static/media/razer-nari-Cooling-Gel-Infused-Cushions-icon.svg": "/static/media/razer-nari-Cooling-Gel-Infused-Cushions-icon.7dca0f37753463b9c4f0bd2dc7db648f.svg",
+    "static/media/razer-nari-Swiveling-Earcups-icon.svg": "/static/media/razer-nari-Swiveling-Earcups-icon.3bc26c5ba1f054a548d9a9c77404d079.svg",
+    "static/media/twitter-logo-silhouette.svg": "/static/media/twitter-logo-silhouette.bad3f2790c24a190569478d4a0a7d53f.svg",
+    "index.html": "/index.html",
+    "static/media/razer-nari-Game-Chat-Balance-icon.svg": "/static/media/razer-nari-Game-Chat-Balance-icon.a8d5ae1bbe8b4c6965d862c0d4eec946.svg",
+    "static/media/facebook-logo.svg": "/static/media/facebook-logo.43f5bfa49cdb83bc47a01d5c8e3f7716.svg",
+    "static/media/razer-nari-35-mm-Wired-Mode-icon.svg": "/static/media/razer-nari-35-mm-Wired-Mode-icon.15ab67dcf74fdbaf3faf41b4982973b2.svg",
+    "main.ab03bd70.css.map": "/static/css/main.ab03bd70.css.map",
+    "main.3993bb63.js.map": "/static/js/main.3993bb63.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab03bd70.css",
+    "static/js/main.3993bb63.js"
+  ]
+}
