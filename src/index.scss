@@ -216,6 +216,10 @@ a {
       position: relative;
       height: 300px;
 
+      .g-items {
+        width: 100%;
+      }
+
       .logo {
         position: absolute;
         right: 47px;
@@ -228,6 +232,7 @@ a {
       padding: 1rem;
       border-bottom: 3px solid #00ff01;
       margin-bottom: 2rem;
+      height: 180px;
 
       h6 {
         color: #fff;
@@ -270,6 +275,10 @@ a {
     }
   }
 
+  #error_message {
+    color: red;
+  }
+
   form {
     input {
       margin: 5px;
@@ -277,6 +286,7 @@ a {
       border: 1px solid #fff;
       border-radius: 5px;
       padding: 10px;
+      color: #fff;
 
       &::placeholder {
         font-weight: 700;
