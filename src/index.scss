@@ -251,6 +251,10 @@ a {
       transform: scale(1.05);
     }
   }
+
+  .g-btn {
+    display: none;
+  }
 }
 
 #contact {
@@ -486,7 +490,6 @@ a {
 
   #others {
     .other-cards {
-      padding: 10%;
       margin: 0;
 
       .gadgets {
@@ -499,6 +502,11 @@ a {
           right: 10px;
         }
       }
+    }
+
+    .g-btn {
+      display: block;
+      width: 100%;
     }
   }
 

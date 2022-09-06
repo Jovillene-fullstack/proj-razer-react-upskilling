@@ -178,7 +178,7 @@ function NavHead() {
 
               <div class="overlay-content">
                 <a href="#" onClick={openNav2}>
-                  product
+                  product <i class="fa-solid fa-chevron-right"></i>
                 </a>
                 <a href="#">about</a>
                 <a href="#">Community</a>
@@ -211,7 +211,7 @@ function NavHead() {
                 <a href="#">mouses & mats</a>
                 <a href="#">keyboards</a>
                 <a href="#" onClick={openNav3}>
-                  headset & audio
+                  headset & audio <i class="fa-solid fa-chevron-right"></i>
                 </a>
                 <a href="#">console</a>
               </div>
