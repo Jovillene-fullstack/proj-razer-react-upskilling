@@ -52,7 +52,7 @@ const Products = () => {
 
         <Swiper
           slidesPerView={4}
-          spaceBetween={30}
+          spaceBetween={10}
           pagination={{
             clickable: true,
           }}
@@ -87,6 +87,7 @@ const Products = () => {
             );
           })}
         </Swiper>
+
         <MyVerticallyCenteredModal
           show={modalShow}
           onHide={() => setModalShow(false)}

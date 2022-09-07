@@ -22,13 +22,19 @@ const Footer = () => {
         </Col>
 
         <Col className="logos">
-          <img src={twitter} alt="" />
-          <img src={fb} alt="" />
-          <img src={google} alt="" />
+          <a href="https://twitter.com" target="_blank">
+            <img src={twitter} alt="" />
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <img src={fb} alt="" />
+          </a>
+          <a href="https://google.com" target="_blank">
+            <img src={google} alt="" />
+          </a>
         </Col>
       </Row>
       <Row>
-        <h6>COPYRIGHT © 2019 FULLSTACKHQ INC. ALL RIGHTS RESERVED</h6>
+        <h6>COPYRIGHT © 2022 FULLSTACKHQ INC. ALL RIGHTS RESERVED</h6>
       </Row>
     </Container>
   );

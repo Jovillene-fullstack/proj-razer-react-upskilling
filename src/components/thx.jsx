@@ -11,7 +11,7 @@ const thx = () => {
     <div id="thx">
       <Container>
         <Row>
-          <Col lg={4} sm={12} className="info" data-aos="fade-up-right">
+          <Col lg={5} sm={12} className="info" data-aos="fade-up-right">
             <div>
               <h4>THX SPATIAL AUDIO</h4>
               <p>

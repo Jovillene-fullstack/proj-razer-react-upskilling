@@ -3,7 +3,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 function Contact() {
-  function validate() {
+  function validate(e) {
+    e.preventDefault();
     var name = document.getElementById("name").value;
 
     var phone = document.getElementById("phone").value;
@@ -62,7 +63,7 @@ function Contact() {
               </form>
             </div>
           </Col>
-          <Col lg={5}>
+          <Col lg={5} className="contact-info">
             <div className="con-header">
               <h4>information</h4>
             </div>
@@ -75,11 +76,11 @@ function Contact() {
               </div>
               <div className="info">
                 <h6>PHONE</h6>
-                <p>+1 234 567-8910</p>
+                <a href="+1 234 567-8910">+1 234 567-8910</a>
               </div>
               <div className="info">
                 <h6>EMAIL</h6>
-                <p>hello@fullstack.com</p>
+                <a href="hello@fullstack.com">hello@fullstack.com</a>
               </div>
             </div>
           </Col>

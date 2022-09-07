@@ -8,9 +8,9 @@ import Col from "react-bootstrap/Col";
 const Hero = () => {
   return (
     <div id="hero">
-      <Container>
+      <Container className="perfect">
         <Row>
-          <Col className="info">
+          <Col lg={7} className="info">
             <h1>SUPREME WIRELESS IMMERSION</h1>
             <p>
               When it comes to gaming immersion, sound plays a critical role. It

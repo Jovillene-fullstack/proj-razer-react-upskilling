@@ -5,7 +5,7 @@ import { items } from "./items.js";
 
 function features() {
   return (
-    <Container id="features">
+    <Container id="features" className="perfect">
       <div className="header">
         <h4>COMPLEMENTED BY COMFORT</h4>
         <p>
@@ -15,11 +15,12 @@ function features() {
         </p>
       </div>
 
-      <Row>
+      <Row className="main-wrap">
         {items.map((item) => {
           return (
             <Col className="items" xs={12} md={6} lg={4}>
               <img src={item.src} alt="" />
+
               <h6>{item.title}</h6>
               <p>{item.desc}</p>
             </Col>
