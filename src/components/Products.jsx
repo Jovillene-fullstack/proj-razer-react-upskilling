@@ -3,9 +3,7 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 //Bootstrap
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import { Container, Button, Modal } from "react-bootstrap";
 
 // Import Swiper styles
 import "swiper/css";
@@ -24,14 +22,16 @@ function MyVerticallyCenteredModal({ show, onHide, modal }) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Body>
-        <img src={slides[modal]} alt="" />
-      </Modal.Body>
-      <Modal.Footer>
-        <Button className="g-btn" onClick={onHide}>
+      {/* <Modal.Title>
+        <Button className="g-btn" >
           Close
         </Button>
-      </Modal.Footer>
+      </Modal.Title> */}
+      <Modal.Body>
+        <i onClick={onHide} className="fa-sharp fa-solid fa-circle-xmark"></i>
+
+        <img src={slides[modal]} alt="" />
+      </Modal.Body>
     </Modal>
   );
 }
@@ -45,7 +45,7 @@ const Products = () => {
   };
   return (
     <>
-      <Container id="products">
+      <Container className="products padders">
         <div className="header">
           <h4>product images</h4>
         </div>
@@ -78,7 +78,7 @@ const Products = () => {
         >
           {slides.map((slide, index) => {
             return (
-              <SwiperSlide className="items" xs={12} md={6} lg={4}>
+              <SwiperSlide key={index} className="items" xs={12} md={6} lg={4}>
                 <img src={slide} alt="" />
                 <Button className="g-btn" onClick={() => openModal(index)}>
                   view fullscreen

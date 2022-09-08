@@ -1,26 +1,31 @@
 import logo from "../assets/logo.png";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Col from "react-bootstrap/Col";
-import Dropdown from "react-bootstrap/Dropdown";
-import NavItem from "react-bootstrap/NavItem";
-import NavLink from "react-bootstrap/NavLink";
+import {
+  Container,
+  Navbar,
+  Nav,
+  Col,
+  Dropdown,
+  NavItem,
+  NavLink,
+} from "react-bootstrap";
+
 import { useState } from "react";
 
-function NavHead() {
+const NavHead = () => {
   const [show, setShow] = useState(false);
   const showDropdown = (e) => {
-    setShow(!show);
+    setShow(true);
   };
+
   const hideDropdown = (e) => {
     setShow(false);
   };
 
   const [show2, setShow2] = useState(false);
   const showDropdown2 = (e) => {
-    setShow2(!show);
+    setShow2(true);
   };
+
   const hideDropdown2 = (e) => {
     setShow2(false);
   };
@@ -29,7 +34,6 @@ function NavHead() {
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
   }
-
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
@@ -37,7 +41,6 @@ function NavHead() {
   function openNav2() {
     document.getElementById("myNav2").style.width = "100%";
   }
-
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav2() {
     document.getElementById("myNav2").style.width = "0%";
@@ -45,14 +48,13 @@ function NavHead() {
   function openNav3() {
     document.getElementById("myNav3").style.width = "100%";
   }
-
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav3() {
     document.getElementById("myNav3").style.width = "0%";
   }
 
   return (
-    <Container id="navi-bar" className="perfect">
+    <Container className="perfect navi-bar">
       <Navbar expand="lg">
         <Col lg={5}>
           <Navbar.Brand href="#">
@@ -63,14 +65,13 @@ function NavHead() {
           <Dropdown as={NavItem}>
             <Dropdown.Toggle
               as={NavLink}
-              onMouseEnter={() => setShow(true)}
+              onMouseEnter={showDropdown}
               onMouseLeave={hideDropdown}
-              id="prod-link"
             >
-              Products <i class="fa-solid fa-chevron-down"></i>
+              Products <i className="fa-solid fa-chevron-down"></i>
             </Dropdown.Toggle>
             <Dropdown.Menu
-              onMouseEnter={() => setShow(true)}
+              onMouseEnter={showDropdown}
               show={show}
               onMouseLeave={hideDropdown}
             >
@@ -82,14 +83,14 @@ function NavHead() {
               <Dropdown className="dropdown-item" as={NavItem}>
                 <Dropdown.Toggle
                   as={NavLink}
-                  onMouseEnter={() => setShow2(true)}
+                  onMouseEnter={showDropdown2}
                   onMouseLeave={hideDropdown2}
                 >
-                  Headset & audio <i class="fa-solid fa-chevron-right"></i>
+                  Headset & audio <i className="fa-solid fa-chevron-right"></i>
                 </Dropdown.Toggle>
                 <Dropdown.Menu
                   className="sub-menu2"
-                  onMouseEnter={() => setShow2(true)}
+                  onMouseEnter={showDropdown2}
                   onMouseLeave={hideDropdown2}
                   show={show2}
                 >
@@ -110,74 +111,66 @@ function NavHead() {
         </Col>
 
         <Col className="sub-navi">
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onClick={closeNav}>
+          <div id="myNav" className="overlay">
+            <p className="closebtn" onClick={closeNav}>
               &times;
-            </a>
+            </p>
 
-            <div class="overlay-content">
-              <a href="#" onClick={openNav2}>
-                product <i class="fa-solid fa-chevron-right"></i>
-              </a>
-              <a href="#">about</a>
-              <a href="#">Community</a>
-              <a href="#">contact us</a>
+            <div className="overlay-content">
+              <p onClick={openNav2}>
+                product <i className="fa-solid fa-chevron-right"></i>
+              </p>
+              <p>about</p>
+              <p>Community</p>
+              <p>contact us</p>
               <button className="g-btn btn"> buy now</button>
             </div>
           </div>
 
           <span onClick={openNav}>
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           </span>
 
-          <div id="myNav2" class="overlay">
-            <div class="first-nav">
-              <div class="nav-label">
+          <div id="myNav2" className="overlay">
+            <div className="first-nav">
+              <div className="nav-label">
                 <h2>products</h2>
               </div>
-              <a
-                href="javascript:void(0)"
-                class="btn-mobile closebtn"
-                onClick={closeNav2}
-              >
+              <p className="btn-mobile closebtn" onClick={closeNav2}>
                 &times;
-              </a>
+              </p>
             </div>
 
-            <div class="overlay-content">
-              <a href="#">laptops </a>
-              <a href="#">mobiles</a>
-              <a href="#">mouses & mats</a>
-              <a href="#">keyboards</a>
-              <a href="#" onClick={openNav3}>
-                headset & audio <i class="fa-solid fa-chevron-right"></i>
-              </a>
-              <a href="#">console</a>
+            <div className="overlay-content">
+              <p>laptops </p>
+              <p>mobiles</p>
+              <p>mouses & mats</p>
+              <p>keyboards</p>
+              <p onClick={openNav3}>
+                headset & audio <i className="fa-solid fa-chevron-right"></i>
+              </p>
+              <p>console</p>
             </div>
           </div>
 
-          <div id="myNav3" class="overlay">
-            <div class="first-nav">
-              <div class="nav-label">
+          <div id="myNav3" className="overlay">
+            <div className="first-nav">
+              <div className="nav-label">
                 <h2>headset & audio</h2>
               </div>
-              <a
-                href="javascript:void(0)"
-                class="btn-mobile closebtn"
-                onClick={closeNav3}
-              >
+              <p className="btn-mobile closebtn" onClick={closeNav3}>
                 &times;
-              </a>
+              </p>
             </div>
-            <div class="overlay-content">
-              <a href="#">wired </a>
-              <a href="#">wireless</a>
+            <div className="overlay-content">
+              <p>wired </p>
+              <p>wireless</p>
             </div>
           </div>
         </Col>
       </Navbar>
     </Container>
   );
-}
+};
 
 export default NavHead;

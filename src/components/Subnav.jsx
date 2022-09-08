@@ -1,5 +1,3 @@
-import React from "react";
-
 const Subnav = () => {
   const openNav = () => {
     document.getElementById("myNav").style.width = "100%";
@@ -8,7 +6,6 @@ const Subnav = () => {
 
   const closeNav = () => {
     document.getElementById("myNav").style.width = "0%";
-    // console.log("hello");
   };
 
   const openNav2 = () => {

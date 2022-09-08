@@ -1,8 +1,6 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 
-function Contact() {
+const Contact = () => {
   function validate(e) {
     e.preventDefault();
     var name = document.getElementById("name").value;
@@ -45,25 +43,30 @@ function Contact() {
     return true;
   }
   return (
-    <div id="contact">
+    <div className="contact padders">
       <Container>
-        <Row className="justify-content-md-center">
-          <Col lg={5}>
+        <Row>
+          <Col md={7}>
             <div className="con-header">
               <h4>ask a question</h4>
+
               <div id="error_message"></div>
+
               <form id="myform" onSubmit={validate}>
-                <input type="text" id="name" placeholder="Name" />
-                <input type="text" id="phone" placeholder="Phone Number" />
+                <div className="name_ph">
+                  <input type="text" id="name" placeholder="Name" />
+                  <input type="text" id="phone" placeholder="Phone Number" />
+                </div>
+
                 <input type="text" id="email" placeholder="Email Address" />
                 <input type="text" id="add" placeholder="Permanent Address" />
-                <input type="text" id="msg" placeholder="Message" />
+                <textarea type="text" id="msg" placeholder="Message" />
 
                 <button className="g-btn">Send</button>
               </form>
             </div>
           </Col>
-          <Col lg={5} className="contact-info">
+          <Col md={5} className="contact-info">
             <div className="con-header">
               <h4>information</h4>
             </div>
@@ -76,11 +79,11 @@ function Contact() {
               </div>
               <div className="info">
                 <h6>PHONE</h6>
-                <a href="+1 234 567-8910">+1 234 567-8910</a>
+                <p className="click">+1 234 567-8910</p>
               </div>
               <div className="info">
                 <h6>EMAIL</h6>
-                <a href="hello@fullstack.com">hello@fullstack.com</a>
+                <p className="click">hello@fullstack.com</p>
               </div>
             </div>
           </Col>
@@ -88,6 +91,6 @@ function Contact() {
       </Container>
     </div>
   );
-}
+};
 
 export default Contact;

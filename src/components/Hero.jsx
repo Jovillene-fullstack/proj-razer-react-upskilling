@@ -1,13 +1,11 @@
+import { Container, Row, Col } from "react-bootstrap";
 import thx from "../assets/razer-nari-thx-logo.png";
 import chroma from "../assets/razer-nari-chroma-logo.png";
 import razer from "../assets/razer-nari-logo.svg";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 const Hero = () => {
   return (
-    <div id="hero">
+    <div className="hero padders">
       <Container className="perfect">
         <Row>
           <Col lg={7} className="info">

@@ -1,11 +1,9 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 import { items } from "./items.js";
 
-function features() {
+const features = () => {
   return (
-    <Container id="features" className="perfect">
+    <Container className="perfect features padders">
       <div className="header">
         <h4>COMPLEMENTED BY COMFORT</h4>
         <p>
@@ -18,7 +16,7 @@ function features() {
       <Row className="main-wrap">
         {items.map((item) => {
           return (
-            <Col className="items" xs={12} md={6} lg={4}>
+            <Col key={item.id} className="items" xs={12} md={6} lg={4}>
               <img src={item.src} alt="" />
 
               <h6>{item.title}</h6>
@@ -27,10 +25,8 @@ function features() {
           );
         })}
       </Row>
-
-      <div className="hori"></div>
     </Container>
   );
-}
+};
 
 export default features;

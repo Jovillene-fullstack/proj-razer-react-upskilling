@@ -1,6 +1,4 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Container, Row, Col } from "react-bootstrap";
 import { otherProd } from "./others.js";
 import React, { useState, useEffect } from "react";
 
@@ -32,7 +30,7 @@ const Others = () => {
     };
   }, [windowDimenion]);
   return (
-    <Container id="others">
+    <Container className="others padders">
       <div className="header">
         <h4>EXPLORE OTHER PRODUCTS</h4>
       </div>
@@ -41,7 +39,7 @@ const Others = () => {
           .slice(0, isProduct ? 4 : windowDimenion.winWidth <= 768 ? 2 : 4)
           .map((prod) => {
             return (
-              <Col className="other-cards" xs={12} md={6} lg={3}>
+              <Col key={prod.id} className="other-cards" xs={12} md={6} lg={3}>
                 <div className="gadgets">
                   <img className="g-items" src={prod.img} alt="" />
                   <img className="logo" src={prod.icon} alt="" />
@@ -49,7 +47,7 @@ const Others = () => {
                 <div className="desc">
                   <h6>{prod.title}</h6>
                   <p>{prod.desc}</p>
-                  <a href="#">learn more</a>
+                  <p className="learn">learn more</p>
                 </div>
               </Col>
             );
