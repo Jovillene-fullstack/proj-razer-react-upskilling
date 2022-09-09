@@ -133,9 +133,6 @@ const NavHead = () => {
 
           <div id="myNav2" className="overlay">
             <div className="first-nav">
-              <div className="nav-label">
-                <h2>products</h2>
-              </div>
               <p className="btn-mobile closebtn" onClick={closeNav2}>
                 &times;
               </p>
@@ -155,9 +152,6 @@ const NavHead = () => {
 
           <div id="myNav3" className="overlay">
             <div className="first-nav">
-              <div className="nav-label">
-                <h2>headset & audio</h2>
-              </div>
               <p className="btn-mobile closebtn" onClick={closeNav3}>
                 &times;
               </p>

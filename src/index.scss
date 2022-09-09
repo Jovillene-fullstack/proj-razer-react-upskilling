@@ -351,7 +351,7 @@ a {
       }
     }
 
-    #error_message {
+    .valid {
       color: red;
     }
 
@@ -393,10 +393,6 @@ a {
           align-items: flex-start;
           justify-content: center;
         }
-
-        textarea {
-          height: 100px;
-        }
       }
     }
 
@@ -404,11 +400,14 @@ a {
       display: flex;
       flex-direction: column;
 
+      .con-header {
+        text-align: left;
+      }
+
       .con-info {
         .info {
-          margin: 30px 0;
-
           h6 {
+            font-size: 12px;
             text-transform: uppercase;
             color: white;
             font-weight: 700;
@@ -417,7 +416,10 @@ a {
           a,
           p {
             color: #818181;
+            font-size: 12px;
             text-decoration: none;
+
+            max-width: 130px;
           }
 
           .click {
@@ -624,7 +626,7 @@ a {
       }
 
       .logo {
-        width: 28%;
+        width: 15%;
       }
     }
 
@@ -634,7 +636,7 @@ a {
   }
 
   .products {
-    margin-bottom: 37%;
+    margin-bottom: 30%;
   }
 
   .thx {
@@ -667,6 +669,10 @@ a {
         .logo {
           right: 10px;
         }
+
+        .swiper-slide img {
+          height: auto;
+        }
       }
     }
 
@@ -690,29 +696,35 @@ a {
       }
     }
 
-    .con-info {
-      padding: 0 3rem;
+    .contact-info {
+      align-items: center;
+      margin-bottom: 50px;
+
+      .con-info {
+        padding: 0 3rem;
+      }
     }
   }
 
   .footer {
     .row:nth-child(1) {
       padding-bottom: 0;
-
-      .col,
-      .col-lg-6 {
-        margin-bottom: 1.5rem;
-      }
+      margin: 20px 0 12px;
 
       .col-lg-6 {
         /* Positioning */
         display: flex;
         flex-direction: column;
         text-align: start;
+
+        p {
+          margin: 0;
+        }
       }
 
       .logos {
         text-align: start;
+        justify-content: flex-start;
       }
     }
 
@@ -870,10 +882,12 @@ a {
   }
 
   .contact {
-    padding: 137px 0 96px 0;
+    padding: 137px 0 60px 0;
 
-    .con-header {
-      padding: 0 110px 0 166px;
+    .col-md-7 {
+      .con-header {
+        padding: 0 110px 0 166px;
+      }
     }
 
     button {
@@ -884,13 +898,21 @@ a {
 
     .contact-info {
       padding-right: 93px;
-      align-items: flex-end;
+      align-items: center;
+
+      .con-header {
+        margin-right: 22px;
+      }
+
+      .info {
+        margin: 30px 85px 38px 0;
+      }
     }
   }
 
   .footer {
     .row:nth-child(1) {
-      padding: 50px 67px 43px 102px;
+      padding: 31px 67px 31px 102px;
 
       .col:nth-child(1) {
         img {

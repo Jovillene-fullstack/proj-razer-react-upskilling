@@ -20,20 +20,23 @@ const Footer = () => {
         </Col>
 
         <Col className="logos">
-          <p>
+          <a href="https://twitter.com">
             <img src={twitter} alt="" />
-          </p>
-          <p>
+          </a>
+          <a href="https://facebook.com">
             <img src={fb} alt="" />
-          </p>
-          <p>
+          </a>
+          <a href="https://google.com">
             <img src={google} alt="" />
-          </p>
+          </a>
         </Col>
       </Row>
 
       <Row>
-        <h6>COPYRIGHT © 2022 FULLSTACKHQ INC. ALL RIGHTS RESERVED</h6>
+        <h6>
+          COPYRIGHT © {new Date().getFullYear()} FULLSTACKHQ INC. ALL RIGHTS
+          RESERVED
+        </h6>
       </Row>
     </Container>
   );

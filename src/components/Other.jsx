@@ -36,10 +36,17 @@ const Others = () => {
       </div>
       <Row>
         {otherProd
-          .slice(0, isProduct ? 4 : windowDimenion.winWidth <= 768 ? 2 : 4)
+          .slice(
+            0,
+            isProduct
+              ? otherProd.length
+              : windowDimenion.winWidth <= 768
+              ? 2
+              : otherProd.length
+          )
           .map((prod) => {
             return (
-              <Col key={prod.id} className="other-cards" xs={12} md={6} lg={3}>
+              <Col key={prod.id} className="other-cards" xs={12} md={6} xl={3}>
                 <div className="gadgets">
                   <img className="g-items" src={prod.img} alt="" />
                   <img className="logo" src={prod.icon} alt="" />

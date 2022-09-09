@@ -1,47 +1,53 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { useState } from "react";
 
 const Contact = () => {
-  function validate(e) {
-    e.preventDefault();
-    var name = document.getElementById("name").value;
+  const [form, setForm] = useState({
+    fullName: "",
+    phone: "",
+    email: "",
+    add: "",
+    msg: "",
+  });
 
-    var phone = document.getElementById("phone").value;
-    var email = document.getElementById("email").value;
-    var add = document.getElementById("add").value;
-    var msg = document.getElementById("msg").value;
-    var error_message = document.getElementById("error_message");
+  const [errorMessage, setErrorMessage] = useState("");
 
-    error_message.style.padding = "10px";
+  const onUpdateField = (e) => {
+    const nextFormState = {
+      ...form,
+      [e.target.name]: e.target.value,
+    };
+    setForm(nextFormState);
+  };
 
+  function validate() {
     var text;
-    if (name.length < 5) {
+    if (form.fullName.length < 5) {
       text = "Please Enter valid Name";
-      error_message.innerHTML = text;
-      return false;
-    }
-    if (add.length < 10) {
+      setErrorMessage(text);
+    } else if (form.add.length < 10) {
       text = "Please Enter Correct Address";
-      error_message.innerHTML = text;
-      return false;
-    }
-    if (isNaN(phone) || phone.length !== 11) {
+      setErrorMessage(text);
+    } else if (isNaN(form.phone) || form.phone.length !== 11) {
       text = "Please Enter valid Phone Number";
-      error_message.innerHTML = text;
-      return false;
-    }
-    if (email.indexOf("@") === -1 || email.length < 6) {
+      setErrorMessage(text);
+    } else if (form.email.indexOf("@") === -1 || form.email.length < 6) {
       text = "Please Enter valid Email";
-      error_message.innerHTML = text;
-      return false;
-    }
-    if (msg.length <= 5) {
+      setErrorMessage(text);
+    } else if (form.msg.length <= 5) {
       text = "Please Enter More Than 140 Characters";
-      error_message.innerHTML = text;
-      return false;
+      setErrorMessage(text);
+    } else {
+      setErrorMessage("Well Done!");
+      alert("Form Submitted Successfully!");
     }
-    alert("Form Submitted Successfully!");
-    return true;
   }
+
+  const onSubmitForm = (e) => {
+    e.preventDefault();
+    validate();
+  };
+
   return (
     <div className="contact padders">
       <Container>
@@ -50,18 +56,49 @@ const Contact = () => {
             <div className="con-header">
               <h4>ask a question</h4>
 
-              <div id="error_message"></div>
+              <p className="valid">{errorMessage}</p>
 
-              <form id="myform" onSubmit={validate}>
+              <form id="myform" onSubmit={onSubmitForm}>
                 <div className="name_ph">
-                  <input type="text" id="name" placeholder="Name" />
-                  <input type="text" id="phone" placeholder="Phone Number" />
+                  <input
+                    name="fullName"
+                    type="text"
+                    id="name"
+                    placeholder="Name"
+                    onChange={onUpdateField}
+                  />
+                  <input
+                    name="phone"
+                    pattern="[0-9]{11}"
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    onChange={onUpdateField}
+                  />
                 </div>
 
-                <input type="text" id="email" placeholder="Email Address" />
-                <input type="text" id="add" placeholder="Permanent Address" />
-                <textarea type="text" id="msg" placeholder="Message" />
-
+                <input
+                  name="email"
+                  type="email"
+                  id="email"
+                  placeholder="Email Address"
+                  onChange={onUpdateField}
+                />
+                <input
+                  name="add"
+                  type="text"
+                  id="add"
+                  placeholder="Permanent Address"
+                  onChange={onUpdateField}
+                />
+                <textarea
+                  name="msg"
+                  rows="4"
+                  type="text"
+                  id="msg"
+                  placeholder="Message"
+                  onChange={onUpdateField}
+                />
                 <button className="g-btn">Send</button>
               </form>
             </div>
@@ -73,17 +110,19 @@ const Contact = () => {
             <div className="con-info">
               <div className="info">
                 <h6>address</h6>
-                <p>
-                  123 East 123th St. <br /> Floor 123 <br /> New York, NY, 10003
-                </p>
+                <p>123 East 123th St. Floor 123 New York, NY, 10003</p>
               </div>
               <div className="info">
                 <h6>PHONE</h6>
-                <p className="click">+1 234 567-8910</p>
+                <a href="tel:+12345678910" className="click">
+                  +1 234 567-8910
+                </a>
               </div>
               <div className="info">
                 <h6>EMAIL</h6>
-                <p className="click">hello@fullstack.com</p>
+                <a href="mailto:hello@fullstack.com" className="click">
+                  hello@fullstack.com
+                </a>
               </div>
             </div>
           </Col>
