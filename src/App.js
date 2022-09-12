@@ -7,7 +7,7 @@ import Others from "./components/Other";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
@@ -20,6 +20,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
