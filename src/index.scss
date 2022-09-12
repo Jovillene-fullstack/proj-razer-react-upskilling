@@ -61,12 +61,12 @@ a {
   font-size: 12px;
   font-weight: 700;
 
-  /* Others */
-  transition: 0.5s ease;
-
   /* Color */
   color: #0f0f0f;
   background: #00ff01;
+
+  /* Others */
+  transition: 0.5s ease;
 
   &:hover {
     background-color: transparent;
@@ -268,6 +268,7 @@ a {
 .others {
   .row {
     .other-cards {
+      /* Positioning */
       transition: 0.5s ease;
       align-items: center;
       justify-content: center;
@@ -279,6 +280,8 @@ a {
       .gadgets {
         background-color: #000;
         position: relative;
+
+        /* Display & Box Model */
         height: 292px;
 
         .g-items {
@@ -287,6 +290,7 @@ a {
         }
 
         .logo {
+          /* Positioning */
           position: absolute;
           right: 16px;
           bottom: 36px;
@@ -356,10 +360,12 @@ a {
     }
 
     form {
+      /* Positioning */
       display: flex;
       flex-direction: column;
 
       .name_ph {
+        /* Display & Box Model */
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -397,6 +403,7 @@ a {
     }
 
     .contact-info {
+      /* Positioning */
       display: flex;
       flex-direction: column;
 
@@ -439,6 +446,7 @@ a {
 }
 
 .footer {
+  /* Positioning */
   align-items: center;
   justify-content: center;
 
@@ -446,6 +454,7 @@ a {
     border-bottom: 2px solid #818181;
 
     .col-lg-6 {
+      /* Positioning */
       display: flex;
       text-align: center;
 
@@ -456,7 +465,10 @@ a {
         text-decoration: none;
         font-weight: 700;
 
+        /* Display & Box Model */
         margin: 0 18px;
+
+        /* Others */
         cursor: pointer;
 
         &:hover {
@@ -466,6 +478,7 @@ a {
     }
 
     .logos {
+      /* Positioning */
       display: flex;
       justify-content: flex-end;
 
@@ -481,6 +494,7 @@ a {
   }
 
   .row:nth-child(2) {
+    /* Display & Box Model */
     margin-top: 5px;
     padding: 10px;
 
@@ -575,6 +589,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .header {
+    /* Display & Box Model */
     width: 100%;
     margin-top: 10%;
 
@@ -590,6 +605,7 @@ a {
   }
 
   .g-btn {
+    /* Display & Box Model */
     margin: 1rem auto;
     width: 150px;
   }
@@ -685,18 +701,21 @@ a {
     padding: 0;
 
     .con-header {
+      /* Text */
       text-align: center;
       margin: 3rem 0;
     }
     form {
       input,
       textarea {
+        /* Display & Box Model */
         width: 100%;
         margin: 5px 0;
       }
     }
 
     .contact-info {
+      /* Positioning */
       align-items: center;
       margin-bottom: 50px;
 
@@ -708,6 +727,7 @@ a {
 
   .footer {
     .row:nth-child(1) {
+      /* Display & Box Model */
       padding-bottom: 0;
       margin: 20px 0 12px;
 
@@ -723,6 +743,7 @@ a {
       }
 
       .logos {
+        /* Positioning */
         text-align: start;
         justify-content: flex-start;
       }
@@ -745,7 +766,10 @@ a {
     }
 
     .sub-navi {
+      /* Display & Box Model */
       display: block;
+
+      /* Text */
       text-align: right;
 
       i {
@@ -819,22 +843,27 @@ a {
 
   .navi-bar {
     .navbar-brand {
+      /* Display & Box Model */
       padding-left: 21%;
     }
   }
 
   .hero {
+    /* Display & Box Model */
     padding: 8.5rem 0 5rem 0;
 
     .nfo {
+      /* Display & Box Model */
       padding-right: 43px;
     }
   }
 
   .features {
+    /* Display & Box Model */
     padding: 5rem 0 3.5rem 0;
 
     .main-wrap {
+      /* Display & Box Model */
       margin: 0 120px;
       padding-bottom: 30px;
 
@@ -845,27 +874,35 @@ a {
   }
 
   .products {
+    /* Display & Box Model */
     margin-bottom: 9rem;
 
     .header {
+      /* Display & Box Model */
       margin-bottom: 17px;
     }
   }
 
   .thx {
+    /* Display & Box Model */
     padding: 72px 0 113px 204px;
 
     .content {
+      /* Display & Box Model */
       max-width: 400px;
+
+      /* Text */
       line-height: 30px;
     }
 
     h4 {
+      /* Display & Box Model */
       margin-top: 32px;
       margin-bottom: 15px;
     }
 
     img {
+      /* Display & Box Model */
       width: 35%;
       margin-top: 11px;
     }
@@ -891,12 +928,14 @@ a {
     }
 
     button {
+      /* Display & Box Model */
       margin: 23px 0 0px 1px;
       height: 40px;
       width: 149px;
     }
 
     .contact-info {
+      /* Display & Box Model */
       padding-right: 93px;
       align-items: center;
 
