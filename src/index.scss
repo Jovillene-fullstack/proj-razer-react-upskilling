@@ -1,10 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-  font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
   background-color: #0f0f0f;
+
+  font-family: "Montserrat", sans-serif;
+
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -17,66 +19,59 @@ a {
   padding: 0 6%;
 }
 
-.header {
-  /* Text */
-  text-align: center;
+h4 {
+  margin-bottom: 26px;
 
-  /* Display & Box Model */
+  color: #00ff01;
+
+  font-size: 23.2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  h4 {
-    /* Text */
-    font-size: 23.2px;
-    font-weight: 700;
-
-    text-transform: uppercase;
-
-    /* Display & Box Model */
-    margin-bottom: 26px;
-
-    /* Color */
-    color: #00ff01;
-  }
+  text-align: center;
 
   p {
     width: 51%;
+
     color: #818181;
+
     font-size: 1rem;
   }
 }
 
 .g-btn {
-  /* Display & Box Model */
   width: 150px;
   height: 42px;
   border-radius: 50px;
   border: none;
 
-  /* Text */
+  color: #0f0f0f;
+  background: #00ff01;
+
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
 
-  /* Color */
-  color: #0f0f0f;
-  background: #00ff01;
-
-  /* Others */
   transition: 0.5s ease;
 
   &:hover {
-    background-color: transparent;
     border: 1px solid #00ff01;
+
+    background-color: transparent;
     color: #00ff01;
   }
 }
 
 .navi-bar {
-  padding: 0.5rem 0;
+  padding: 8px 0;
 
   .navbar-brand {
     img {
@@ -85,7 +80,6 @@ a {
   }
 
   .menus {
-    /* Positioning */
     display: flex;
     align-items: center;
   }
@@ -98,13 +92,12 @@ a {
 
   .nav-link,
   .dropdown-item {
-    /* Text */
+    color: #818181;
+
     font-weight: 800;
-    font-size: 0.75rem;
+    font-size: 12px;
     text-transform: uppercase;
 
-    /* Color */
-    color: #818181;
     &:hover,
     &:active {
       color: #00ff01;
@@ -124,18 +117,15 @@ a {
   }
 
   .col:nth-child(2) {
-    /* Display & Box Model */
     justify-content: space-evenly;
     display: flex;
 
     .sub-menu2 {
-      /* Display & Box Model */
+      transform: translate3d(180px, -7px, 0px);
+
       justify-content: space-around;
       position: absolute;
       inset: 0px auto auto 0px;
-
-      /* Positioning */
-      transform: translate3d(180px, -7px, 0px);
     }
 
     .g-btn {
@@ -149,26 +139,27 @@ a {
 }
 
 .hero {
-  /* Background */
+  position: relative;
+
   background-image: url(../src/assets/hero.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  /* Positioning */
-  position: relative;
-
   .info {
     h1 {
-      font-size: clamp(1.5rem, -0.0913rem + 2.4719vw, 2.875rem);
       color: #fff;
+
+      font-size: clamp(1.5rem, -0.0913rem + 2.4719vw, 2.875rem);
       font-weight: 700;
     }
 
     p {
-      font-size: 1rem;
-      color: #818181;
       margin: 20px 0;
+
+      color: #818181;
+
+      font-size: 16px;
     }
 
     .logo {
@@ -178,7 +169,6 @@ a {
   }
 
   .razer-svg {
-    /* Positioning */
     position: absolute;
     width: 14%;
     right: 345px;
@@ -194,17 +184,16 @@ a {
       padding-left: 38px;
 
       h6 {
-        /* Text */
+        color: #fff;
+
         font-weight: 700;
         font-size: 15px;
         letter-spacing: 1px;
-
-        /* Color */
-        color: #fff;
       }
 
       p {
         color: #818181;
+
         font-size: 12px;
       }
 
@@ -228,26 +217,24 @@ a {
 
   .modal-content {
     position: relative;
-    background-color: transparent;
+
     width: 100%;
 
+    background-color: transparent;
+
     i {
-      /* Positioning */
       position: absolute;
       top: 5px;
       right: 7px;
 
-      /* Text */
-      font-size: 40px;
-
-      /* Color */
       color: red;
+
+      font-size: 40px;
     }
   }
 }
 
 .thx {
-  /* Background */
   background: url(./assets/razer-nari-usp02-desktop-wireless-gaming-headset.jpg);
   background-position: center center;
   background-size: cover;
@@ -255,11 +242,13 @@ a {
   div {
     h4 {
       color: #00ff01;
+
       font-weight: 700;
     }
 
     p {
       color: #ddd;
+
       font-size: 1.2rem;
     }
   }
@@ -268,7 +257,6 @@ a {
 .others {
   .row {
     .other-cards {
-      /* Positioning */
       transition: 0.5s ease;
       align-items: center;
       justify-content: center;
@@ -278,10 +266,10 @@ a {
       }
 
       .gadgets {
-        background-color: #000;
         position: relative;
 
-        /* Display & Box Model */
+        background-color: #000;
+
         height: 292px;
 
         .g-items {
@@ -290,7 +278,6 @@ a {
         }
 
         .logo {
-          /* Positioning */
           position: absolute;
           right: 16px;
           bottom: 36px;
@@ -298,37 +285,35 @@ a {
       }
 
       .desc {
-        background-color: #161515;
-
-        /* Display & Box Model */
         border-bottom: 3px solid #00ff01;
         margin-bottom: 2rem;
         height: 109px;
         padding: 0 12px;
 
+        background-color: #161515;
+
         h6 {
           color: #fff;
+
           font-weight: 700;
           text-transform: uppercase;
         }
 
         p {
           color: #818181;
+
           font-size: 12px;
           margin-bottom: 6px;
         }
 
         .learn {
-          /* Text */
+          color: #00ff01;
+
           font-weight: 600;
           text-transform: uppercase;
           text-decoration: none;
           font-size: 12px;
 
-          /* Color */
-          color: #00ff01;
-
-          /* Others*/
           cursor: pointer;
         }
       }
@@ -350,6 +335,7 @@ a {
     .con-header {
       h4 {
         color: #00ff01;
+
         font-weight: 700;
         text-transform: uppercase;
       }
@@ -360,42 +346,35 @@ a {
     }
 
     form {
-      /* Positioning */
       display: flex;
       flex-direction: column;
 
       .name_ph {
-        /* Display & Box Model */
         display: flex;
         justify-content: space-between;
         width: 100%;
 
-        #name,
-        #phone {
+        .name,
+        .phone {
           width: 48%;
         }
       }
 
       input,
       textarea {
-        background-color: transparent;
-
-        /* Display & Box Model */
         border: 1px solid #fff;
         border-radius: 5px;
         width: 100%;
         padding: 9px;
         margin: 16px 0 0 0;
 
-        /* Color */
         color: #fff;
+        background-color: transparent;
 
         &::placeholder {
-          /* Text */
           font-size: 12px;
           font-weight: 500;
 
-          /* Display & Box Model */
           align-items: flex-start;
           justify-content: center;
         }
@@ -403,7 +382,6 @@ a {
     }
 
     .contact-info {
-      /* Positioning */
       display: flex;
       flex-direction: column;
 
@@ -414,19 +392,21 @@ a {
       .con-info {
         .info {
           h6 {
+            color: white;
+
+            font-weight: 700;
             font-size: 12px;
             text-transform: uppercase;
-            color: white;
-            font-weight: 700;
           }
 
           a,
           p {
+            max-width: 130px;
+
             color: #818181;
+
             font-size: 12px;
             text-decoration: none;
-
-            max-width: 130px;
           }
 
           .click {
@@ -446,7 +426,6 @@ a {
 }
 
 .footer {
-  /* Positioning */
   align-items: center;
   justify-content: center;
 
@@ -454,21 +433,17 @@ a {
     border-bottom: 2px solid #818181;
 
     .col-lg-6 {
-      /* Positioning */
       display: flex;
       text-align: center;
 
       p {
-        /* Text */
+        margin: 0 18px;
+
         font-size: 12px;
         text-transform: uppercase;
         text-decoration: none;
         font-weight: 700;
 
-        /* Display & Box Model */
-        margin: 0 18px;
-
-        /* Others */
         cursor: pointer;
 
         &:hover {
@@ -478,13 +453,8 @@ a {
     }
 
     .logos {
-      /* Positioning */
       display: flex;
       justify-content: flex-end;
-
-      p {
-        cursor: pointer;
-      }
 
       img {
         width: 14px;
@@ -494,11 +464,9 @@ a {
   }
 
   .row:nth-child(2) {
-    /* Display & Box Model */
     margin-top: 5px;
     padding: 10px;
 
-    /* Text */
     text-align: center;
     font-weight: 700;
     color: #818181;
@@ -510,16 +478,12 @@ a {
 }
 
 // MOBILE NAVBAR OVERLAY
-
-/* The Overlay (background) */
 .overlay {
-  /* Positioning */
   position: fixed;
   z-index: 99;
   left: 0;
   top: 0;
 
-  /* Display & Box Model */
   height: 100%;
   width: 0;
   background-color: rgb(0, 0, 0);
@@ -527,20 +491,17 @@ a {
   overflow-x: hidden;
   transition: 0.5s;
 
-  p {
-    /* Color */
+  a {
+    display: block;
+    transition: 0.3s;
+    padding: 8px;
+
     text-transform: uppercase;
     text-decoration: none;
     font-size: 24px;
     font-weight: 700;
     color: #818181;
 
-    /* Display & Box Model */
-    display: block;
-    transition: 0.3s;
-    padding: 8px;
-
-    /* Other */
     cursor: pointer;
 
     &:hover,
@@ -550,23 +511,19 @@ a {
   }
 
   .overlay-content {
-    /* Positioning */
     position: relative;
     top: 25%;
     width: 100%;
 
-    /* Text */
     text-align: center;
     margin-top: 30px;
   }
 
   .closebtn {
-    /* Positioning */
     position: absolute;
     top: 20px;
     right: 45px;
 
-    /* Text */
     font-size: 60px;
   }
 }
@@ -577,36 +534,35 @@ a {
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .closebtn {
-    /* Positioning */
     top: 15px;
     right: 35px;
 
-    /* Text */
     font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .header {
-    /* Display & Box Model */
     width: 100%;
     margin-top: 10%;
 
     h4 {
       padding: 0 10%;
+
       font-size: clamp(1.625rem, 1.4464rem + 0.8929vw, 1.875rem);
     }
 
     P {
-      font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1rem);
       width: 90%;
+
+      font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1rem);
     }
   }
 
   .g-btn {
-    /* Display & Box Model */
-    margin: 1rem auto;
+    margin: 16px auto;
     width: 150px;
   }
 
@@ -623,7 +579,6 @@ a {
   }
 
   .hero {
-    /* Background */
     background: url(./assets/razer-nari-hero-desktop-wireless-gaming-headset.jpg),
       linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     background-blend-mode: overlay;
@@ -638,6 +593,7 @@ a {
 
       p {
         color: #fff;
+
         font-size: clamp(0.75rem, 0.6607rem + 0.4464vw, 0.875rem);
       }
 
@@ -661,6 +617,7 @@ a {
 
     .info {
       margin: 10% 0;
+
       p {
         font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1rem);
       }
@@ -676,7 +633,6 @@ a {
       margin: 0;
 
       .gadgets {
-        /* Positioning */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -701,21 +657,19 @@ a {
     padding: 0;
 
     .con-header {
-      /* Text */
       text-align: center;
       margin: 3rem 0;
     }
+
     form {
       input,
       textarea {
-        /* Display & Box Model */
         width: 100%;
         margin: 5px 0;
       }
     }
 
     .contact-info {
-      /* Positioning */
       align-items: center;
       margin-bottom: 50px;
 
@@ -727,12 +681,10 @@ a {
 
   .footer {
     .row:nth-child(1) {
-      /* Display & Box Model */
       padding-bottom: 0;
       margin: 20px 0 12px;
 
       .col-lg-6 {
-        /* Positioning */
         display: flex;
         flex-direction: column;
         text-align: start;
@@ -743,7 +695,6 @@ a {
       }
 
       .logos {
-        /* Positioning */
         text-align: start;
         justify-content: flex-start;
       }
@@ -766,45 +717,38 @@ a {
     }
 
     .sub-navi {
-      /* Display & Box Model */
       display: block;
 
-      /* Text */
       text-align: right;
 
       i {
         width: 30px;
+
         color: #818181;
       }
 
       .mobile-menu {
-        /* Positioning */
         display: flex;
         flex-direction: column;
         position: relative;
         top: 25%;
         width: 100%;
 
-        /* Text */
-        text-align: center;
-
-        /* Display & Box Model */
         margin-top: 30px;
 
-        a {
-          /* Text */
-          text-transform: uppercase;
-          text-decoration: none;
-          font-weight: 700;
-          text-decoration: none;
+        text-align: center;
 
-          /* Display & Box Model */
+        a {
           padding: 8px;
           display: block;
           transition: 0.3s;
 
-          /* Color */
           color: #818181;
+
+          text-transform: uppercase;
+          text-decoration: none;
+          font-weight: 700;
+          text-decoration: none;
         }
       }
     }
@@ -843,27 +787,22 @@ a {
 
   .navi-bar {
     .navbar-brand {
-      /* Display & Box Model */
       padding-left: 21%;
     }
   }
 
   .hero {
-    /* Display & Box Model */
     padding: 8.5rem 0 5rem 0;
 
     .nfo {
-      /* Display & Box Model */
       padding-right: 43px;
     }
   }
 
   .features {
-    /* Display & Box Model */
     padding: 5rem 0 3.5rem 0;
 
     .main-wrap {
-      /* Display & Box Model */
       margin: 0 120px;
       padding-bottom: 30px;
 
@@ -874,35 +813,28 @@ a {
   }
 
   .products {
-    /* Display & Box Model */
     margin-bottom: 9rem;
 
     .header {
-      /* Display & Box Model */
       margin-bottom: 17px;
     }
   }
 
   .thx {
-    /* Display & Box Model */
     padding: 72px 0 113px 204px;
 
     .content {
-      /* Display & Box Model */
       max-width: 400px;
 
-      /* Text */
       line-height: 30px;
     }
 
     h4 {
-      /* Display & Box Model */
       margin-top: 32px;
       margin-bottom: 15px;
     }
 
     img {
-      /* Display & Box Model */
       width: 35%;
       margin-top: 11px;
     }
@@ -928,14 +860,12 @@ a {
     }
 
     button {
-      /* Display & Box Model */
       margin: 23px 0 0px 1px;
       height: 40px;
       width: 149px;
     }
 
     .contact-info {
-      /* Display & Box Model */
       padding-right: 93px;
       align-items: center;
 

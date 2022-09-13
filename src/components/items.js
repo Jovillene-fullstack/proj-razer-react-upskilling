@@ -1,9 +1,4 @@
-import svg1 from "../assets/razer-nari-Cooling-Gel-Infused-Cushions-icon.svg";
-import svg2 from "../assets/razer-nari-Auto-Adjusting-Headband-icon.svg";
-import svg3 from "../assets/razer-nari-Swiveling-Earcups-icon.svg";
-import svg4 from "../assets/razer-nari-Game-Chat-Balance-icon.svg";
-import svg5 from "../assets/razer-nari-Wireless-Audio-icon.svg";
-import svg6 from "../assets/razer-nari-35-mm-Wired-Mode-icon.svg";
+import { svg1, svg2, svg3, svg4, svg5, svg6 } from "./index";
 
 export const items = [
   {

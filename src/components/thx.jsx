@@ -1,7 +1,7 @@
 //Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 import "aos/dist/aos.css";
-import Logo from "../assets/razer-nari-thx-logo.png";
+import { thxLogo } from "./index";
 
 const thx = () => {
   return (
@@ -19,7 +19,7 @@ const thx = () => {
                 senses during your game. Unleash your predatory instincts with
                 sound as a weapon.
               </p>
-              <img className="logo" src={Logo} alt="thx" />
+              <img className="logo" src={thxLogo} alt="thx" />
             </div>
           </Col>
         </Row>

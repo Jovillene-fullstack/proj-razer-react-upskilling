@@ -1,5 +1,5 @@
-import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -21,6 +21,7 @@ const Contact = () => {
   };
 
   function validate() {
+    var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     var text;
     if (form.fullName.length < 5) {
       text = "Please Enter valid Name";
@@ -28,17 +29,17 @@ const Contact = () => {
     } else if (form.add.length < 10) {
       text = "Please Enter Correct Address";
       setErrorMessage(text);
-    } else if (isNaN(form.phone) || form.phone.length !== 11) {
+    } else if (form.phone.match(phoneno)) {
       text = "Please Enter valid Phone Number";
+      console.log("corre");
       setErrorMessage(text);
     } else if (form.email.indexOf("@") === -1 || form.email.length < 6) {
       text = "Please Enter valid Email";
       setErrorMessage(text);
-    } else if (form.msg.length <= 5) {
+    } else if (form.msg.length <= 140) {
       text = "Please Enter More Than 140 Characters";
       setErrorMessage(text);
     } else {
-      setErrorMessage("Well Done!");
       alert("Form Submitted Successfully!");
     }
   }
@@ -47,7 +48,6 @@ const Contact = () => {
     e.preventDefault();
     validate();
   };
-
   return (
     <div className="contact padders">
       <Container>
@@ -64,6 +64,7 @@ const Contact = () => {
                     name="fullName"
                     type="text"
                     id="name"
+                    className="name"
                     placeholder="Name"
                     onChange={onUpdateField}
                   />
@@ -72,6 +73,7 @@ const Contact = () => {
                     pattern="[0-9]{11}"
                     type="tel"
                     id="phone"
+                    className="phone"
                     placeholder="Phone Number"
                     onChange={onUpdateField}
                   />

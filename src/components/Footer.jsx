@@ -1,9 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-
-import logo from "../assets/logo.png";
-import twitter from "../assets/twitter-logo-silhouette.svg";
-import fb from "../assets/facebook-logo.svg";
-import google from "../assets/google-plus.svg";
+import { logo, twitter, fb, google } from "./index";
 
 const Footer = () => {
   return (

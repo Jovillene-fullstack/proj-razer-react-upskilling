@@ -1,11 +1,6 @@
 import { useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-//Bootstrap
 import { Container, Button, Modal } from "react-bootstrap";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "../styles/swiper.scss";
@@ -22,11 +17,6 @@ function MyVerticallyCenteredModal({ show, onHide, modal }) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      {/* <Modal.Title>
-        <Button className="g-btn" >
-          Close
-        </Button>
-      </Modal.Title> */}
       <Modal.Body>
         <i onClick={onHide} className="fa-sharp fa-solid fa-circle-xmark"></i>
 
@@ -46,9 +36,7 @@ const Products = () => {
   return (
     <>
       <Container className="products padders">
-        <div className="header">
-          <h4>product images</h4>
-        </div>
+        <h4 className="header">product images</h4>
 
         <Swiper
           slidesPerView={4}
@@ -74,7 +62,6 @@ const Products = () => {
             },
           }}
           modules={[Pagination]}
-          className="mySwiper"
         >
           {slides.map((slide, index) => {
             return (

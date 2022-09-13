@@ -1,4 +1,5 @@
-import logo from "../assets/logo.png";
+import { useState } from "react";
+import { logo } from "./index";
 import {
   Container,
   Navbar,
@@ -8,8 +9,6 @@ import {
   NavItem,
   NavLink,
 } from "react-bootstrap";
-
-import { useState } from "react";
 
 const NavHead = () => {
   const [show, setShow] = useState(false);
@@ -117,12 +116,12 @@ const NavHead = () => {
             </p>
 
             <div className="overlay-content">
-              <p onClick={openNav2}>
+              <a href="#/" onClick={openNav2}>
                 product <i className="fa-solid fa-chevron-right"></i>
-              </p>
-              <p>about</p>
-              <p>Community</p>
-              <p>contact us</p>
+              </a>
+              <a href="#/">about</a>
+              <a href="#/">Community</a>
+              <a href="#/">contact us</a>
               <button className="g-btn btn"> buy now</button>
             </div>
           </div>
@@ -133,32 +132,32 @@ const NavHead = () => {
 
           <div id="myNav2" className="overlay">
             <div className="first-nav">
-              <p className="btn-mobile closebtn" onClick={closeNav2}>
+              <a href="#/" className="btn-mobile closebtn" onClick={closeNav2}>
                 &times;
-              </p>
+              </a>
             </div>
 
             <div className="overlay-content">
-              <p>laptops </p>
-              <p>mobiles</p>
-              <p>mouses & mats</p>
-              <p>keyboards</p>
-              <p onClick={openNav3}>
+              <a href="#/">laptops </a>
+              <a href="#/">mobiles</a>
+              <a href="#/">mouses & mats</a>
+              <a href="#/">keyboards</a>
+              <a href="#/" onClick={openNav3}>
                 headset & audio <i className="fa-solid fa-chevron-right"></i>
-              </p>
-              <p>console</p>
+              </a>
+              <a href="#/">console</a>
             </div>
           </div>
 
           <div id="myNav3" className="overlay">
             <div className="first-nav">
-              <p className="btn-mobile closebtn" onClick={closeNav3}>
+              <a href="#/" className="btn-mobile closebtn" onClick={closeNav3}>
                 &times;
-              </p>
+              </a>
             </div>
             <div className="overlay-content">
-              <p>wired </p>
-              <p>wireless</p>
+              <a href="#/">wired </a>
+              <a href="#/">wireless</a>
             </div>
           </div>
         </Col>

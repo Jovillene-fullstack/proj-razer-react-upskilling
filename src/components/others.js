@@ -1,7 +1,4 @@
-import img1 from "../assets/PNG/Nari-Ultimate-Base.png";
-import img2 from "../assets/PNG/Mamba-Wireless-Base.png";
-import img3 from "../assets/PNG/BlackWidow-Elite-Base.png";
-import img4 from "../assets/PNG/powered-by-chroma-xs.png";
+import { img1, img2, img3, img4 } from "./index";
 
 export const otherProd = [
   {

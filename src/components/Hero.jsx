@@ -1,7 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import thx from "../assets/razer-nari-thx-logo.png";
-import chroma from "../assets/razer-nari-chroma-logo.png";
-import razer from "../assets/razer-nari-logo.svg";
+import { thx, chroma, razer } from "./index";
 
 const Hero = () => {
   return (

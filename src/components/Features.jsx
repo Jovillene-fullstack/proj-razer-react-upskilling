@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { items } from "./items.js";
 
-const features = () => {
+const Features = () => {
   return (
     <Container className="perfect features padders">
       <div className="header">
@@ -29,4 +29,4 @@ const features = () => {
   );
 };
 
-export default features;
+export default Features;

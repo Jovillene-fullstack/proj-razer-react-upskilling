@@ -29,6 +29,7 @@ const Others = () => {
       window.removeEventListener("resize", detectSize);
     };
   }, [windowDimenion]);
+
   return (
     <Container className="others padders">
       <div className="header">
@@ -54,7 +55,9 @@ const Others = () => {
                 <div className="desc">
                   <h6>{prod.title}</h6>
                   <p>{prod.desc}</p>
-                  <p className="learn">learn more</p>
+                  <a href="#/" className="learn">
+                    learn more
+                  </a>
                 </div>
               </Col>
             );
