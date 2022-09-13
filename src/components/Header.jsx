@@ -53,7 +53,7 @@ const NavHead = () => {
   }
 
   return (
-    <Container className="perfect navi-bar">
+    <Container className=" navi-bar">
       <Navbar expand="lg">
         <Col lg={5}>
           <Navbar.Brand href="#">

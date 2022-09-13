@@ -15,10 +15,6 @@ a {
 
 // GLOBAL STYLES
 
-.perfect {
-  padding: 0 6%;
-}
-
 h4 {
   margin-bottom: 26px;
 
@@ -39,8 +35,6 @@ h4 {
   text-align: center;
 
   p {
-    width: 51%;
-
     color: #818181;
 
     font-size: 1rem;
@@ -129,7 +123,7 @@ h4 {
     }
 
     .g-btn {
-      margin-right: 6.5%;
+      margin-right: 52px;
     }
   }
 
@@ -156,6 +150,7 @@ h4 {
 
     p {
       margin: 20px 0;
+      max-width: 600px;
 
       color: #818181;
 
@@ -163,16 +158,16 @@ h4 {
     }
 
     .logo {
-      margin-top: 2%;
-      width: 16%;
+      margin-top: 13px;
+      width: 91px;
     }
   }
 
   .razer-svg {
     position: absolute;
-    width: 14%;
+    width: 272px;
     right: 345px;
-    bottom: 16px;
+    bottom: 10px;
   }
 }
 
@@ -198,7 +193,7 @@ h4 {
       }
 
       img {
-        margin: 3% 0;
+        margin: 12px 0;
         width: 40px;
       }
     }
@@ -270,7 +265,7 @@ h4 {
 
         background-color: #000;
 
-        height: 292px;
+        height: 273px;
 
         .g-items {
           height: 100%;
@@ -280,16 +275,15 @@ h4 {
         .logo {
           position: absolute;
           right: 16px;
-          bottom: 36px;
+          bottom: 15px;
         }
       }
 
       .desc {
         border-bottom: 3px solid #00ff01;
         margin-bottom: 2rem;
-        height: 109px;
-        padding: 0 12px;
-
+        height: 129px;
+        padding: 20px 12px 0px 12px;
         background-color: #161515;
 
         h6 {
@@ -366,7 +360,7 @@ h4 {
         border-radius: 5px;
         width: 100%;
         padding: 9px;
-        margin: 16px 0 0 0;
+        margin-bottom: 14px;
 
         color: #fff;
         background-color: transparent;
@@ -512,7 +506,7 @@ h4 {
 
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 200px;
     width: 100%;
 
     text-align: center;
@@ -546,16 +540,16 @@ h4 {
 @media only screen and (max-width: 768px) {
   .header {
     width: 100%;
-    margin-top: 10%;
+    margin-top: 25px;
 
     h4 {
-      padding: 0 10%;
+      padding: 0 25px;
 
       font-size: clamp(1.625rem, 1.4464rem + 0.8929vw, 1.875rem);
     }
 
     P {
-      width: 90%;
+      padding: 10px;
 
       font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1rem);
     }
@@ -584,7 +578,7 @@ h4 {
     background-blend-mode: overlay;
     background-size: cover;
     background-position: 35% 70%;
-    padding: 5%;
+    padding: 10px;
 
     .info {
       h1 {
@@ -598,7 +592,7 @@ h4 {
       }
 
       .logo {
-        width: 15%;
+        width: 50px;
       }
     }
 
@@ -608,15 +602,14 @@ h4 {
   }
 
   .products {
-    margin-bottom: 30%;
+    margin-bottom: 68px;
   }
 
   .thx {
-    background-position: 40% 50%;
-    padding: 0 5%;
+    padding: 0 22px;
 
     .info {
-      margin: 10% 0;
+      margin: 25px 0;
 
       p {
         font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1rem);
@@ -726,31 +719,6 @@ h4 {
 
         color: #818181;
       }
-
-      .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 25%;
-        width: 100%;
-
-        margin-top: 30px;
-
-        text-align: center;
-
-        a {
-          padding: 8px;
-          display: block;
-          transition: 0.3s;
-
-          color: #818181;
-
-          text-transform: uppercase;
-          text-decoration: none;
-          font-weight: 700;
-          text-decoration: none;
-        }
-      }
     }
   }
 }
@@ -781,13 +749,18 @@ h4 {
 @media only screen and (min-width: 1024px) {
   .header {
     p {
+      width: 700px;
       line-height: 29px;
     }
   }
 
+  .perfect {
+    padding: 0 117px;
+  }
+
   .navi-bar {
     .navbar-brand {
-      padding-left: 21%;
+      padding-left: 115px;
     }
   }
 
@@ -800,7 +773,7 @@ h4 {
   }
 
   .features {
-    padding: 5rem 0 3.5rem 0;
+    padding: 76px 1px 57px 1px;
 
     .main-wrap {
       margin: 0 120px;
@@ -813,10 +786,10 @@ h4 {
   }
 
   .products {
-    margin-bottom: 9rem;
+    margin-bottom: 147px;
 
     .header {
-      margin-bottom: 17px;
+      margin-bottom: 41px;
     }
   }
 
@@ -835,7 +808,7 @@ h4 {
     }
 
     img {
-      width: 35%;
+      width: 139px;
       margin-top: 11px;
     }
   }
@@ -860,7 +833,7 @@ h4 {
     }
 
     button {
-      margin: 23px 0 0px 1px;
+      margin: 9px 0 0px 1px;
       height: 40px;
       width: 149px;
     }
@@ -874,14 +847,14 @@ h4 {
       }
 
       .info {
-        margin: 30px 85px 38px 0;
+        margin: 13px 85px 38px 0;
       }
     }
   }
 
   .footer {
     .row:nth-child(1) {
-      padding: 31px 67px 31px 102px;
+      padding: 36px 67px 31px 102px;
 
       .col:nth-child(1) {
         img {
