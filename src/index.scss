@@ -838,22 +838,21 @@ h4 {
 
   .contact {
     padding: 137px 0 60px 0;
-
     .col-md-7 {
       .con-header {
-        padding: 0 110px 0 166px;
+        padding: 0 30px 0 100px;
       }
 
       .name,
       .phone {
         width: 48%;
       }
-    }
 
-    button {
-      margin: 9px 0 0px 1px;
-      height: 40px;
-      width: 149px;
+      button {
+        margin: 9px 0 0px 1px;
+        height: 40px;
+        width: 149px;
+      }
     }
 
     .contact-info {
@@ -878,6 +877,16 @@ h4 {
         img {
           width: 164px;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .contact {
+    .col-md-7 {
+      .con-header {
+        padding: 0 110px 0 166px;
       }
     }
   }
