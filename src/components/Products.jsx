@@ -29,6 +29,7 @@ function MyVerticallyCenteredModal({ show, onHide, modal }) {
 const Products = () => {
   const [modalShow, setModalShow] = useState(false);
   const [modal, setModal] = useState(0);
+
   const openModal = (id) => {
     setModalShow(true);
     setModal(id);

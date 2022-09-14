@@ -1,7 +1,7 @@
 //Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 import "aos/dist/aos.css";
-import { thxLogo } from "./index";
+import { thxLogo } from "../assets/index";
 
 const thx = () => {
   return (

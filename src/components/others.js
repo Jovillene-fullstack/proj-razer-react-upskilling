@@ -1,4 +1,4 @@
-import { img1, img2, img3, img4 } from "./index";
+import { img1, img2, img3, img4 } from "../assets/index";
 
 export const otherProd = [
   {

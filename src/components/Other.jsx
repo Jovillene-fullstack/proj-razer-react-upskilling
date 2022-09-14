@@ -7,14 +7,6 @@ const Others = () => {
     winWidth: window.innerWidth,
   });
   const [isProduct, setIsProduct] = useState(false);
-  const detectSize = () => {
-    detectHW({
-      winWidth: window.innerWidth,
-    });
-  };
-  const showAll = () => {
-    setIsProduct(true);
-  };
 
   useEffect(() => {
     if (windowDimenion.winWidth >= 768) {
@@ -24,11 +16,20 @@ const Others = () => {
 
   useEffect(() => {
     window.addEventListener("resize", detectSize);
-
     return () => {
       window.removeEventListener("resize", detectSize);
     };
   }, [windowDimenion]);
+
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+    });
+  };
+
+  const showAll = () => {
+    setIsProduct(true);
+  };
 
   return (
     <Container className="others padders">

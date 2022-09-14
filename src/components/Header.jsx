@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { logo } from "./index";
+import { logo } from "../assets/index.js";
 import {
   Container,
   Navbar,
@@ -11,6 +11,11 @@ import {
 } from "react-bootstrap";
 
 const NavHead = () => {
+  const [show2, setShow2] = useState(false);
+  const showDropdown2 = (e) => {
+    setShow2(true);
+  };
+
   const [show, setShow] = useState(false);
   const showDropdown = (e) => {
     setShow(true);
@@ -18,11 +23,6 @@ const NavHead = () => {
 
   const hideDropdown = (e) => {
     setShow(false);
-  };
-
-  const [show2, setShow2] = useState(false);
-  const showDropdown2 = (e) => {
-    setShow2(true);
   };
 
   const hideDropdown2 = (e) => {

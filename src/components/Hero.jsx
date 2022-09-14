@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { thx, chroma, razer } from "./index";
+import { thx, chroma, razer } from "../assets/index";
 
 const Hero = () => {
   return (

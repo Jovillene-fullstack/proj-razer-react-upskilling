@@ -20,6 +20,11 @@ const Contact = () => {
     setForm(nextFormState);
   };
 
+  const onSubmitForm = (e) => {
+    e.preventDefault();
+    validate();
+  };
+
   function validate() {
     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     var text;
@@ -29,9 +34,8 @@ const Contact = () => {
     } else if (form.add.length < 10) {
       text = "Please Enter Correct Address";
       setErrorMessage(text);
-    } else if (form.phone.match(phoneno)) {
+    } else if (phoneno.test(form.phone) || form.phone.length() !== 11) {
       text = "Please Enter valid Phone Number";
-      console.log("corre");
       setErrorMessage(text);
     } else if (form.email.indexOf("@") === -1 || form.email.length < 6) {
       text = "Please Enter valid Email";
@@ -44,10 +48,6 @@ const Contact = () => {
     }
   }
 
-  const onSubmitForm = (e) => {
-    e.preventDefault();
-    validate();
-  };
   return (
     <div className="contact padders">
       <Container>

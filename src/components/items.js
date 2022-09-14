@@ -1,4 +1,4 @@
-import { svg1, svg2, svg3, svg4, svg5, svg6 } from "./index";
+import { svg1, svg2, svg3, svg4, svg5, svg6 } from "../assets/index";
 
 export const items = [
   {
