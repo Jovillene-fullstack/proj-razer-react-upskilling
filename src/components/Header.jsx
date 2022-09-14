@@ -111,9 +111,9 @@ const NavHead = () => {
 
         <Col className="sub-navi">
           <div id="myNav" className="overlay">
-            <p className="closebtn" onClick={closeNav}>
+            <a href="#/" className="closebtn" onClick={closeNav}>
               &times;
-            </p>
+            </a>
 
             <div className="overlay-content">
               <a href="#/" onClick={openNav2}>

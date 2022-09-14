@@ -9,10 +9,10 @@ const Footer = () => {
           <img src={logo} alt="" />
         </Col>
         <Col lg={6}>
-          <p> products</p>
-          <p> about</p>
-          <p> Community</p>
-          <p> contact us</p>
+          <a href="#/"> products</a>
+          <a href="#/"> about</a>
+          <a href="#/"> Community</a>
+          <a href="#/"> contact us</a>
         </Col>
 
         <Col className="logos">

@@ -347,11 +347,6 @@ h4 {
         display: flex;
         justify-content: space-between;
         width: 100%;
-
-        .name,
-        .phone {
-          width: 48%;
-        }
       }
 
       input,
@@ -430,7 +425,7 @@ h4 {
       display: flex;
       text-align: center;
 
-      p {
+      a {
         margin: 0 18px;
 
         font-size: 12px;
@@ -656,9 +651,18 @@ h4 {
 
     form {
       input,
-      textarea {
+      textarea,
+      .name_ph {
+        flex-direction: column;
         width: 100%;
         margin: 5px 0;
+      }
+
+      .name_ph {
+        .name,
+        .phone {
+          width: 100%;
+        }
       }
     }
 
@@ -736,6 +740,15 @@ h4 {
 
   .products {
     height: 50vh;
+  }
+
+  .contact {
+    .col-md-7 {
+      .name,
+      .phone {
+        width: 48%;
+      }
+    }
   }
 
   .swiper-horizontal > .swiper-pagination-bullets,
@@ -829,6 +842,11 @@ h4 {
     .col-md-7 {
       .con-header {
         padding: 0 110px 0 166px;
+      }
+
+      .name,
+      .phone {
+        width: 48%;
       }
     }
 

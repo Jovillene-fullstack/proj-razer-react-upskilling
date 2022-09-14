@@ -33,6 +33,7 @@ const Products = () => {
     setModalShow(true);
     setModal(id);
   };
+
   return (
     <>
       <Container className="products padders">
