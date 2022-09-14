@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab03bd70.css",
-    "main.js": "/static/js/main.3993bb63.js",
+    "main.css": "/static/css/main.b2b807e4.css",
+    "main.js": "/static/js/main.2ec8f81a.js",
     "static/media/razer-nari-gallery-05-wireless-gaming-headset.jpg": "/static/media/razer-nari-gallery-05-wireless-gaming-headset.2378ba140b5de3778816.jpg",
     "static/media/razer-nari-gallery-08-wireless-gaming-headset.jpg": "/static/media/razer-nari-gallery-08-wireless-gaming-headset.e08335c98b5420b34fe0.jpg",
     "static/media/razer-nari-gallery-06-wireless-gaming-headset.jpg": "/static/media/razer-nari-gallery-06-wireless-gaming-headset.50335b69ffd4bb03a654.jpg",
@@ -25,11 +25,11 @@
     "static/media/razer-nari-Game-Chat-Balance-icon.svg": "/static/media/razer-nari-Game-Chat-Balance-icon.a8d5ae1bbe8b4c6965d862c0d4eec946.svg",
     "static/media/facebook-logo.svg": "/static/media/facebook-logo.43f5bfa49cdb83bc47a01d5c8e3f7716.svg",
     "static/media/razer-nari-35-mm-Wired-Mode-icon.svg": "/static/media/razer-nari-35-mm-Wired-Mode-icon.15ab67dcf74fdbaf3faf41b4982973b2.svg",
-    "main.ab03bd70.css.map": "/static/css/main.ab03bd70.css.map",
-    "main.3993bb63.js.map": "/static/js/main.3993bb63.js.map"
+    "main.b2b807e4.css.map": "/static/css/main.b2b807e4.css.map",
+    "main.2ec8f81a.js.map": "/static/js/main.2ec8f81a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab03bd70.css",
-    "static/js/main.3993bb63.js"
+    "static/css/main.b2b807e4.css",
+    "static/js/main.2ec8f81a.js"
   ]
 }
