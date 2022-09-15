@@ -1,6 +1,6 @@
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { otherProd } from "./others.js";
-import React, { useState, useEffect } from "react";
 
 const Others = () => {
   const [windowDimenion, detectHW] = useState({
