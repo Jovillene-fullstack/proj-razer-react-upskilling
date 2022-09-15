@@ -12,42 +12,30 @@ import {
 
 const NavHead = () => {
   const [show2, setShow2] = useState(false);
-  const showDropdown2 = (e) => {
-    setShow2(true);
-  };
+  const showDropdown2 = (e) => setShow2(true);
 
   const [show, setShow] = useState(false);
-  const showDropdown = (e) => {
-    setShow(true);
-  };
+  const showDropdown = (e) => setShow(true);
 
-  const hideDropdown = (e) => {
-    setShow(false);
-  };
+  const hideDropdown = (e) => setShow(false);
 
-  const hideDropdown2 = (e) => {
-    setShow2(false);
-  };
+  const hideDropdown2 = (e) => setShow2(false);
 
-  /* Open when someone clicks on the span element */
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
   }
-  /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
   function openNav2() {
     document.getElementById("myNav2").style.width = "100%";
   }
-  /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav2() {
     document.getElementById("myNav2").style.width = "0%";
   }
   function openNav3() {
     document.getElementById("myNav3").style.width = "100%";
   }
-  /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeNav3() {
     document.getElementById("myNav3").style.width = "0%";
   }
