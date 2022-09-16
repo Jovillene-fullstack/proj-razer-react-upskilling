@@ -12,13 +12,11 @@ import {
 
 const NavHead = () => {
   const [show2, setShow2] = useState(false);
-  const showDropdown2 = (e) => setShow2(true);
-
   const [show, setShow] = useState(false);
+
+  const showDropdown2 = (e) => setShow2(true);
   const showDropdown = (e) => setShow(true);
-
   const hideDropdown = (e) => setShow(false);
-
   const hideDropdown2 = (e) => setShow2(false);
 
   function openNav() {
