@@ -34,7 +34,7 @@ const Contact = () => {
     } else if (form.add.length < 10) {
       text = "Please Enter Correct Address";
       setErrorMessage(text);
-    } else if (phoneno.test(form.phone) || form.phone.length() !== 11) {
+    } else if (phoneno.test(form.phone) || form.phone.length !== 11) {
       text = "Please Enter valid Phone Number";
       setErrorMessage(text);
     } else if (form.email.indexOf("@") === -1 || form.email.length < 6) {

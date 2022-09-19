@@ -27,9 +27,7 @@ const Others = () => {
     });
   };
 
-  const showAll = () => {
-    setIsProduct(true);
-  };
+  const showAll = () => setIsProduct(true);
 
   return (
     <Container className="others padders">
